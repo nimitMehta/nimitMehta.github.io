@@ -1,0 +1,253 @@
+@include media-xs {
+  .about .jobs {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+
+  .projects__item {
+    &::after {
+      content: none !important;
+    }
+    &:hover {
+      border-bottom: 5px solid $secondary-color;
+    }
+  }
+
+  .projects__items {
+    margin: 1rem 1rem;
+    width: calc(100% - 2rem);
+  }
+
+  .projects__bio-image {
+    height: 30vh;
+  }
+
+  .projects__btns {
+    left: 0;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  .projects__btn {
+    font-size: 0.8rem;
+    opacity: 1;
+    color: white;
+  }
+
+  .nav .menu-nav {
+    padding-right: 0;
+  }
+
+  footer,
+  .social-icons {
+    position: relative !important;
+    flex-direction: row !important;
+    right: 0 !important;
+    left: 0 !important;
+    text-align: center !important;
+    justify-content: center;
+    transform: rotate(0deg) !important;
+  }
+
+  header {
+    position: relative !important;
+    padding: 0 !important;
+  }
+
+  .social-icons {
+    margin-top: 2rem;
+  }
+
+  .home__name {
+    font-size: 3rem;
+  }
+
+  section.home h2 {
+    padding: 1rem;
+  }
+}
+
+@include media-sm {
+  .social-icons {
+    display: flex !important;
+    flex-direction: column !important;
+    bottom: 0 !important;
+    padding-bottom: 0;
+  }
+
+  footer {
+    transform: rotate(90deg) translate(-3rem, -5rem) !important;
+  }
+
+  .contact__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+  }
+  .contact__phone {
+    text-align: center;
+  }
+  .contact__email {
+    text-align: center;
+  }
+
+  .social-icons-index,
+  .social-icons-contact,
+  .footer-home,
+  .footer-contact {
+    position: relative !important;
+    flex-direction: row !important;
+    right: 0 !important;
+    left: 0 !important;
+    text-align: center !important;
+    justify-content: center;
+    transform: rotate(0deg) !important;
+    margin-top: 2rem !important;
+  }
+
+  .projects__item {
+    &::after {
+      content: none !important;
+    }
+    &:hover {
+      border-bottom: 5px solid $secondary-color;
+    }
+  }
+
+  .projects__bio-image {
+    height: 40vh;
+  }
+
+  .projects__btns {
+    left: 0;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  .projects__btn {
+    font-size: 0.8rem;
+    opacity: 1;
+    color: white;
+  }
+
+  .projects__items,
+  .about .jobs {
+    width: 70vw !important;
+  }
+
+  .social-icons-contact,
+  .social-icons-index {
+    margin-top: 2rem !important;
+  }
+
+  header {
+    position: absolute !important;
+    padding: 1rem 0 !important;
+  }
+
+  .menu-btn {
+    visibility: hidden;
+  }
+
+  .nav {
+    visibility: visible;
+    position: relative !important;
+    width: 100%;
+    .menu-nav {
+      display: block;
+      transform: translateY(0);
+      height: 100%;
+      background: transparent;
+      text-align: right;
+      padding-right: 0;
+      &__item {
+        display: inline;
+        padding-right: 1.5rem;
+      }
+
+      &__link {
+        font-size: 1.5rem;
+        padding: 1rem 0 !important;
+      }
+    }
+  }
+}
+
+@include media-md {
+  .menu-btn {
+    visibility: hidden;
+  }
+
+  .nav {
+    visibility: visible;
+
+    .menu-nav {
+      display: block;
+      transform: translateY(0);
+      height: 100%;
+      background: transparent;
+      text-align: right;
+
+      &__item {
+        display: inline;
+        padding-right: 1.5rem;
+      }
+
+      &__link {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .about__bio {
+    font-size: 1.5rem;
+  }
+
+  .about .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about footer {
+    transform: rotate(90deg) translate(-3rem, -5rem);
+  }
+
+  .projects {
+    &__bio-image {
+      height: 40vh;
+    }
+  }
+
+  .contact__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+  }
+  .contact__phone {
+    text-align: center;
+  }
+  .contact__email {
+    text-align: center;
+  }
+}
+
+@include media-lg {
+  .contact__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+  }
+}
+
+@include media-xl {
+  .projects__bio-image {
+    height: 50vh;
+  }
+
+  .about .social-icons {
+    display: flex;
+    flex-direction: row;
+    // flex-direction: column;
+  }
+
+  .about footer {
+    transform: rotate(0deg);
+  }
+}
