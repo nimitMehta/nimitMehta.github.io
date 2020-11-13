@@ -434,7 +434,7 @@
   margin-top: 2rem;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .about .jobs {
     margin: 1rem;
     width: calc(100% - 2rem);
@@ -496,7 +496,7 @@
   }
 }
 
-@media screen and (min-width: 401px) and (max-width: 768px) {
+@media screen and (min-width: 501px) and (max-width: 768px) {
   .social-icons {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -741,3 +741,4 @@ footer {
   padding: 1rem;
   color: #fff;
 }
+/*# sourceMappingURL=main.css.map */
