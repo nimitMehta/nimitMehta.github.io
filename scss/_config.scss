@@ -20,31 +20,25 @@ $secondary-color: #ff652f;
 }
 
 @mixin media-xs {
-  @media screen and (max-width: 500px) {
+  @media (max-width: 500px) {
     @content;
   }
 }
 
 @mixin media-sm {
-  @media screen and (min-width: 501px) and (max-width: 768px) {
+  @media (min-width: 501px) and (max-width: 768px) {
     @content;
   }
 }
 
 @mixin media-md {
-  @media screen and (min-width: 769px) {
+  @media (min-width769px) and (max-width: 1200px) {
     @content;
   }
 }
 
 @mixin media-lg {
-  @media screen and (min-width: 1024px) {
-    @content;
-  }
-}
-
-@mixin media-xl {
-  @media screen and (min-width: 1400px) {
+  @media (min-width: 1401px) {
     @content;
   }
 }
