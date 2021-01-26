@@ -733,6 +733,7 @@
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    width: 100% !important;
   }
   .nav .menu-nav {
     height: -webkit-fit-content;
