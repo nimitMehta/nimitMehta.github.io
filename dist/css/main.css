@@ -664,6 +664,9 @@
   .menu-btn {
     visibility: hidden;
   }
+  header {
+    position: relative !important;
+  }
   .nav {
     visibility: visible;
   }
@@ -705,6 +708,12 @@
 }
 
 @media (min-width: 1401px) {
+  .home {
+    padding-top: 20vh;
+  }
+  header {
+    position: relative !important;
+  }
   .contact__list {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -718,9 +727,18 @@
     visibility: hidden;
   }
   .nav {
+    padding: 10px !important;
     visibility: visible;
+    position: relative !important;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .nav .menu-nav {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: relative !important;
     display: block;
     -webkit-transform: translateY(0);
             transform: translateY(0);
@@ -752,6 +770,11 @@
   .about__bio p {
     font-size: 1.5rem;
     font-weight: normal;
+  }
+  .about__bio-image {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
 }
 
